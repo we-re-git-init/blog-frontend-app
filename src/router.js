@@ -5,6 +5,7 @@ import Signup from "./views/Signup.vue";
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import PostsShow from "./views/PostsShow.vue";
+import PostsEdit from "./views/PostsEdit.vue";
 
 Vue.use(Router)
 
@@ -26,6 +27,11 @@ export default new Router({
       path: "/posts/:id",
       name: "posts-show",
       component: PostsShow
+    },
+    {
+      path: "/posts/:id/edit",
+      name: "posts-edit",
+      component: PostsEdit
     },
     {
       path: "/logout",
